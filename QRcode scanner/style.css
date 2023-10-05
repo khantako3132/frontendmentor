@@ -1,0 +1,102 @@
+*{
+    margin: 0;padding: 0;
+}
+.container-box{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6e1f0;
+}
+.card{
+    max-width: 100%;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    padding: 25px;
+    background-color: #FDFFFF;
+}
+.card .image-box{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.card .image-box img{
+    width: 100%;
+    object-fit: contain;
+}
+.card .text-box{
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+.card .text-box h2{
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+}
+.card .text-box p{
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.523);
+}
+
+
+@media(max-width:768px){
+    .container-box{
+        min-height: 100vh;
+    }
+    .card .text-box{
+        width: 100%;
+    }
+    .card .text-box h2{
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+    .card .text-box p{
+        font-size: 0.7rem;
+        padding: unset;
+    }
+}
+
+@media(max-width:320px){
+    .card{
+        width: 40%;
+    }
+
+    .card .text-box{
+        width: 100%;
+    }
+    .card .text-box h2{
+        font-size: 0.4rem;
+        padding: 5px 0;
+    }
+    .card .text-box p{
+        font-size: 0.3rem;
+      
+    }
+}
+@media(max-width:100px){
+
+    .container-box{
+        min-height: 100vh;
+    }
+    .card .text-box{
+        width: 100%;
+    }
+    .card .text-box h2{
+        font-size: 0.2rem;
+        padding: 3px 0;
+    }
+    .card .text-box p{
+        font-size: 0.15rem;
+      
+    }
+}
